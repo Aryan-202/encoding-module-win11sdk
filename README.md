@@ -1,0 +1,1 @@
+# encoding-module-win11sdk
