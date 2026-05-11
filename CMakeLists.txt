@@ -12,7 +12,7 @@ endif()
 project ("encoding-module-win11sdk")
 
 # Add source to this project's executable.
-add_executable (encoding-module-win11sdk "main.cpp" "module-lib.h")
+add_executable (encoding-module-win11sdk "main.cpp"  "include/player.h" "src/core/player.cpp" "src/core/decoder.cpp" "include/decoder.h" "include/media_engine/api.h" "src/platform/windows/renderer.cpp" "src/api/c_interface.cpp" "tests/test_decoder.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET encoding-module-win11sdk PROPERTY CXX_STANDARD 20)
